@@ -23,6 +23,6 @@ const Post = sequelize.define('Post', {
 
 // ความสัมพันธ์ One-to-Many ระหว่าง User และ Post
 User.hasMany(Post, { foreignKey: 'userId' });
-Post.belongsTo(User, { foreignKey: 'userId' });
+Post.belongsTo(User, { foreignKey: 'userId' }); 
 
 module.exports = Post;
